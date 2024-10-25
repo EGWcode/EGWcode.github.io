@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+
+    <header class="sticky-header">
+    <nav id="desktop-nav">
+        <div class="logo">
+            <a href= "#">
+                <img
+            src="./assets/weblogo.png"
+            alt="Logo"
+            class="logo-img"
+            >
+            </a>
+            </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects(WIP)</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about"onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience"onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#education"onclick="toggleMenu()">Education</a></li>
+                <li><a href="#projects"onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact"onclick="toggleMenu()">Contact</a></li>
+                <li><a href="#gallery"onclick="toggleMenu()">Gallery</a></li>
+            </div>
+        </div>
+    </nav>
+</header>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img 
+            src="./assets/pfpp2.png" 
+            alt="Ethan Williams profile picture" 
+            class="profile-pic"
+            />
+        </div>
+        <div class="section_text">
+            
+            <h1 class="title">Hi ! My name is Ethan Williams. I'm currently studying computer science at Hampton University !</h1>
+            
+            
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2"
+                onclick="window.open('./assets/Resume3.pdf')"
+                >
+                Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+             </button>
+            </div>
+            <div id="socials-container">
+                <img
+                 src="./assets/linkedin.png" 
+                 alt="My LinkedIn Profile"
+                 class="icon" 
+                 onclick="location.href='linkedin.com/in/ethanwilliams2024/'"
+                />
+                <img
+                 src="./assets/github.png" 
+                 alt="My GitHub Profile"
+                class="icon" 
+                onclick="location.href='https://github.com/EGWcode'"
+                />
+            </div>
+        </div>
+        <img
+              src="./assets/pixhand.png"
+              alt="Arrow icon"
+              class="icon arrow"
+              onclick="location.href='./#profile'"
+            />
+            
+        </section>
+        <section id="about">
+            
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+              <div class="section__pic-container">
+                <img
+                  src="./assets/pfpp.png"
+                  alt="Profile picture"
+                  class="about-pic"
+                />
+              </div>
+              <div class="about-details-container">
+                <div class="about-container"></div>
+                </div>
+                <div class="text-container">
+                  <p>
+                    I'm a motivated second-year Computer Science undergraduate passionate 
+                    about becoming a skillful professional. I'm experienced in using Java,
+                    and am currently learning HTML & CSS. Outside of coding, I enjoy listening
+                    to music, cooking, painting, playing chess, and martial arts !
+                    I am currently looking for an internship role to apply and expand my 
+                    technical skills and gain hands-on field experience
+                  </p>
+                </div>
+              </div>
+            </div>
+            <img
+              src="./assets/pixhand.png"
+              alt="Arrow icon"
+              class="icon arrow"
+              onclick="location.href='./#experience'"
+            />
+          </section>
+          <section id="experience">
+
+            <h1 class="title">Experience</h1>
+            <div class="experience-details-container">
+              <div class="about-containers">
+                <div class="details-container">
+                  <h2 class="experience-sub-title">Frontend Development</h2>
+                  <div class="article-container">
+
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>CSS</h3>
+                        <p>Intermediate</p>
+                      </div>
+                    </article>
+
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>HTML</h3>
+                        <p>Basic</p>
+                      </div>
+                    </article>
+
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>JavaScript</h3>
+                        <p>Basic</p>
+                      </div>
+                    </article>
+                    
+
+                  </div>
+                </div>
+                <div class="details-container">
+                  <h2 class="experience-sub-title">Backend Development</h2>
+                  <div class="article-container">
+
+                    <article>
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Java</h3>
+                          <p>Experienced</p>
+                        </div>
+                      </article>
+
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Python</h3>
+                        <p>Basic</p>
+                      </div>
+                    </article>
+                
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img
+              src="./assets/pixhand.png"
+              alt="Arrow icon"
+              class="icon arrow"
+              onclick="location.href='./#projects'"
+            />
+
+             
+          </section>
+
+          <section id="education">
+
+            <h1 class="title">Education</h1>
+            <div class="education-details-container">
+              <div class="about-containers">
+                <div class="details-container">
+                  <h2 class="education-sub-title">Hampton University, <p> Hampton, Virginia </p>  </p></h2> 
+                  <div class="article-container">
+
+                    <article>
+                      
+                      <div>
+                        <h3>2023-Present</h3>
+                        <p>Forecasted Graduation - May 2027</p>
+                      </div>
+                    </article>
+
+                    <article>
+                      
+                      <div>
+                        <h3>GPA: 3.0/4.0</h3>
+                        
+                      </div>
+                    </article>
+
+                    <article>
+                     
+                      <div>
+                        <h3>Major: Computer Science</h3>
+                  
+                      </div>
+                    </article>
+                    
+
+                  </div>
+                </div>
+                
+             
+          </section>
+          
+          <section id="gallery">
+
+          <h1>Photo Gallery</h1>
+          <p>
+            Taken during my time in Tokyo.
+          </p>
+    <div class="gallery">
+        <img src="./assets/20230727_EthanWilliams_NGTOK_1.jpg" alt="Image 1" onclick="openLightbox();showImage(1)">
+        <img src="./assets/20230727_EthanWilliams_NGTOK_2.jpg " alt="Image 2" onclick="openLightbox();showImage(2)">
+        <img src="./assets/20230727_EthanWilliams_NGTOK_3.jpg " alt="Image 3" onclick="openLightbox();showImage(3)">
+        <img src="./assets/20230728_EthanWilliams_NGTOK_4.jpg" alt="Image 4" onclick="openLightbox();showImage(4)">
+        <img src="./assets/20230728_EthanWilliams_NGTOK_5.jpg " alt="Image 5" onclick="openLightbox();showImage(5)">
+        <img src="./assets/20230728_EthanWilliams_NGTOK_6.jpg " alt="Image 6" onclick="openLightbox();showImage(6)">
+        <img src="./assets/20230729_EthanWilliams_NGTOK_7.jpg " alt="Image 7" onclick="openLightbox();showImage(7)">
+        <img src="./assets/20230730_EthanWilliams_NGTOK_10.jpg" alt="Image 8" onclick="openLightbox();showImage(8)">
+        <img src="./assets/20230728_EthanWilliams_NGTOK_11.jpg " alt="Image 9" onclick="openLightbox();showImage(9)">
+
+        <!-- Add more images as needed -->
+    </div>
+
+    <!-- Lightbox for enlarged image view -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" class="lightbox-content">
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+  </section>
+          <!--
+          <section id="projects">
+           
+            <h1 class="title">Projects</h1>
+            <div class="experience-details-container">
+              <div class="about-containers">
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="./assets/project-1.png"
+                      alt="Project 1"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Project One</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/'"
+                    >
+                      Github
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/'"
+                    >
+                      Live Demo
+                    </button>
+                  </div>
+                </div>
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="./assets/project-2.png"
+                      alt="Project 2"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Project Two</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/'"
+                    >
+                      Github
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/'"
+                    >
+                      Live Demo
+                    </button>
+                  </div>
+                </div>
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="./assets/project-3.png"
+                      alt="Project 3"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Project Three</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/'"
+                    >
+                      Github
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/'"
+                    >
+                      Live Demo
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            -->
+            <img
+              src="./assets/pixhand.png"
+              alt="Arrow icon"
+              class="icon arrow"
+              onclick="location.href='./#contact'"
+            />
+          </section>
+          <section id="contact">
+            
+            <p class="title">//Contact</p>
+            <div class="contact-info-upper-container">
+              <div class="contact-info-container">
+                <img
+                  src="./assets/email.png"
+                  alt="Email icon"
+                  class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:Ethangwilliams2005@gmail.com">Ethangwilliams2005@gmail.com</a></p>
+              </div>
+              <div class="contact-info-container">
+                <img
+                  src="./assets/linkedin.png"
+                  alt="LinkedIn icon"
+                  class="icon contact-icon"
+                />
+                <p><a href="https//:www.linkedin.com/in/ethanwilliams2024/">LinkedIn</a></p>
+              </div>
+            </div>
+          </section>
+          <footer>
+            <nav>
+              <div class="nav-links-container">
+                <ul class="nav-links">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#experience">Experience</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+            <p>Copyright &#169; 2024 Ethan Williams. All Rights Reserved.</p>
+          </footer>
+    <script src="script.js"></script>
+</body>
+</html>
