@@ -423,7 +423,9 @@ section {
   }
 
   /*EDUCATION*/
-  
+  .education {
+    color: white;
+  }
   
   /*GALLERY*/
   /* General Styles */
