@@ -326,24 +326,19 @@ section {
 
   #about
   .section__pic-container {
-    height: 700px;
-    width: 700px;
+    height: 350px;
+    width: 350px;
     margin: auto 0;
   }
   
   .text-container p{
     color: rgb(255, 255, 255);
-    font-size: 2rem;
+    font-size: 1.25rem;
     margin-top: 4rem;
     margin-right: 12rem;
   }
     
 
-    .about-details-container {
-    justify-content: flex-start;
-    flex-direction: column;
-    display: flex;
-  }
   
   .about-containers,
   .about-details-container {
@@ -424,6 +419,14 @@ section {
 
   /*EDUCATION*/
   .education {
+    color: white;
+  }
+
+  .education-details-container {
+    color: white;
+  }
+
+  .education-sub-title {
     color: white;
   }
   
